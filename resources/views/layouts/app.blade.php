@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="{{ asset('assets/vendor/toastr/toastr.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/vendor/jvectormap/jquery-jvectormap-2.0.3.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/vendor/charts-c3/plugin.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap-multiselect/bootstrap-multiselect.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.min.css') }}">
 
     <style>
         .annual_report .c3-axis.c3-axis-y {
@@ -36,32 +38,34 @@
         <!-- Page Loader -->
         <div class="page-loader-wrapper">
             <div class="loader">
-                <div class="m-t-30"><img src="{{ asset('assets/images/logo-icon.svg') }}" width="48" height="48" alt="Iconic"></div>
+                <div class="m-t-30"><img src="{{ asset('assets/images/logo-icon.svg') }}" width="48" height="48"
+                        alt="Iconic"></div>
                 <p>Please wait...</p>
             </div>
         </div>
 
         <!-- Top navbar div start -->
         <livewire:component.menu.navbar />
-        
+
         <!-- main left menu -->
         <livewire:component.menu.left-side-bar>
-        
 
-        <!-- rightbar icon div -->
-        <livewire:component.menu.right-side-bar>
 
-        <!-- Content -->
-        {{ $slot }}
+            <!-- rightbar icon div -->
+            <livewire:component.menu.right-side-bar>
+
+                <!-- Content -->
+                {{ $slot }}
     </div>
 
     @stack('scripts')
-    
+
     <!-- Javascript -->
     <script src="{{ asset('assets/bundles/libscripts.bundle.js') }}"></script>
     <script src="{{ asset('assets/bundles/vendorscripts.bundle.js') }}"></script>
 
     <!-- page vendor js file -->
+    <script src="{{ asset('assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js') }}"></script>
     <script src="{{ asset('assets/bundles/jvectormap.bundle.js') }}"></script>
     <script src="{{ asset('assets/vendor/toastr/toastr.js') }}"></script>
     <script src="{{ asset('assets/bundles/c3.bundle.js') }}"></script>

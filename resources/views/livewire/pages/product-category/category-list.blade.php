@@ -30,7 +30,7 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="header">
-                            <h2>User List</h2>
+                            <h2>Category List</h2>
                         </div>
                         <div class="body table-responsive">
                             <table class="table table-hover mb-0 c_list">
